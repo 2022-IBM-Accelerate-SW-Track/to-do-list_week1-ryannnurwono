@@ -30,6 +30,7 @@ class Home extends Component {
   };
   render() {
     return (
+      
       <div className="Home">
         <h1>Todo's </h1>
        

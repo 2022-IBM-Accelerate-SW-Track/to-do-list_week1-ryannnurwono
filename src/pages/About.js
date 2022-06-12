@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import "./About.css";
 import profile from "../assets/profile.jpeg";
 import Accordion from '@mui/material/Accordion';
@@ -8,6 +9,9 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 ;
 
+function Intro(name) {
+  return <p>Hi, my name is {name.full}. I'm an EECS major at UC Berkeley. Here is a ranking and explanation of my top 10 NBA players in history.</p>;
+}
 export default class About extends Component {
   render() {
     return (
@@ -26,8 +30,10 @@ export default class About extends Component {
     <div className="split right">
       <div className="centered">
         <div className="name_title">Ryan James Nurwono</div>
-        <div className = "brief_description"><p>Hi! I'm a rising sophomore EECS major at UC Berkeley. Here is my ranking of the top 10 NBA players of all time.</p>
+        <div className = "brief_description">
+        <Intro full = "Ryan Nurwono"></Intro>
         </div>
+
         <div className="brief_description">
           
         
